@@ -1,8 +1,9 @@
 body {
     background: url(https://i.pinimg.com/originals/17/f7/07/17f70709ccb40a1268681958f4cbe44c.gif);
-    background-size: cover;
-    width: 100%;
-    height: 60vh;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     font-family: 'bubble', cursive, sans-serif;
 }
 
@@ -266,15 +267,14 @@ html {
 }
 
 .hobbies1 {
-    --g: 8px; /* the gap */
-  
+    --g: 8px;
     display: grid;
-    clip-path: inset(1px); /* to avoid visual glitchs */
+    clip-path: inset(1px);
   }
   .hobbies1 > img {
     --_p: calc(-1*var(--g));
     grid-area: 1/1;
-    width: 700px; /* control the size */
+    width: 700px;
     height: auto;
     justify-self: center;
     aspect-ratio: 1;
@@ -297,16 +297,15 @@ html {
   }
 
 .hobbies2 {
-    --g: 8px; /* the gap */
-  
+    --g: 8px;
     display: grid;
-    clip-path: inset(1px); /* to avoid visual glitchs */
+    clip-path: inset(1px); 
   }
   .hobbies2 > img {
     --_p: calc(-1*var(--g));
     grid-area: 1/1;
     margin-top: 55px;
-    width: 700px; /* control the size */
+    width: 700px;
     height: 1000px;
     justify-self: center;
     aspect-ratio: 1;
@@ -331,14 +330,7 @@ html {
 .projects {
     padding: 50px 20px;
     max-width: 1200px;
-    margin: 0 auto;
     text-align: center;
-  }
-  
-  .projects h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #5f27cd;
   }
   
   .projects-grid {
@@ -398,13 +390,24 @@ html {
 
 @media screen and (max-width: 768px) {
     .hero img {
-        width: 50%;
+        width: 100%;
     }
     .projects-grid {
         grid-template-columns: 1fr;
+        margin-bottom: 100px;
+    }
+    #contact {
+        padding-top: 550px;
     }
 } 
 
 a {
     scroll-behavior: smooth;
+}
+
+.card1 {
+    background: url(https://i.pinimg.com/originals/85/97/6a/85976a36793b01e11c05b8fa3f0a7e71.gif);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 0, 174, 0.876);
 }
